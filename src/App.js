@@ -14,8 +14,11 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <p><Link to="/">Home</Link></p>
-        <p><Link to="/demo">Demo Page</Link></p>
+        <div>
+          <p className="navbar-item"><Link to="/">Home</Link></p>
+          <p className="navbar-item"><Link to="/demo">Demo Page</Link></p>
+          <p className="navbar-item"><Link to="/movies">Movies</Link></p>
+        </div>
         {this.props.children}
       </div>
     );
